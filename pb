@@ -33,3 +33,6 @@ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scrip
 export PATH=$PATH:/home/oracle/bin
 
 docker pull ghcr.io/oracle/oci-cli:latest
+
+# 쉘스크립트 삭제
+rm pb
