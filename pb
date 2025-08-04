@@ -28,9 +28,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo chmod 666 /var/run/docker.sock
 
 # 오라클 OCI-CLI 설치
-bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
-export PATH=$PATH:/home/oracle/bin
-exec -l $SHELL
 docker pull ghcr.io/oracle/oci-cli:latest
 
 # 쉘스크립트 삭제
