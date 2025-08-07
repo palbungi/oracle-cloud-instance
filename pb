@@ -9,7 +9,7 @@ sudo swapon /swapfile
 sudo echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
 
 # Minimal에 필요한 패키지설치 & 리눅스 업데이트 & 업그레이드
-sudo apt-get -y install debconf-utils unzip cron gosu libgl1 libvulkan1 tzdata nano man-db cron systemd net-tools iproute2 dialog apt-transport-https ca-certificates gnupg software-properties-common
+sudo apt-get -y install debconf-utils unzip gosu libgl1 libvulkan1 tzdata nano man-db systemd net-tools iproute2 dialog apt-transport-https ca-certificates gnupg software-properties-common
 echo "tzdata tzdata/Areas select Asia" | sudo debconf-set-selections
 echo "tzdata tzdata/Zones/Asia select Beirut" | sudo debconf-set-selections
 sudo debconf-set-selections <<< 'debconf debconf/frontend select Noninteractive'
